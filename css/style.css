@@ -17,6 +17,22 @@ section{
 
 }
 
+.btn a {
+	text-decoration: none;
+	color: #000;
+}
+
+li input{
+	padding: 0;
+	margin: 0;
+	border:none;
+	color: #000;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+	text-align: center;		
+}
+
+
 .navbar-inverse{
 	color:white !important;
 	text-transform: uppercase;

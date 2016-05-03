@@ -15,6 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src='bootstrap/js/bootstrap.min.js'></script>
 	<script src="scripts/main.js"></script>
+	<script src="scripts/app.js"></script>
 
 	
 </head>
@@ -50,11 +51,11 @@
 			<li>
 				<a href="#contact">Contact</a>
 			</li>
-			    <!-- <li id="search-bar">
-			     	<a href="" class="link"><input type="text" id="search" placeholder="Search here!"></a>
-				 </li>-->
+			<li id="search-bar" class="hidden">
+			     	<a href=""><input type="text" id="search" placeholder="Look it up!"></a>
+			</li>
 			<li id="search-btn">
-				<a href="#/"><span class="glyphicon glyphicon-search" id="search-btn"></span></a>
+				<a href=""><span class="glyphicon glyphicon-search" id="search-btn"></span></a>
 			</li>
 			</ul>
 	</div>
@@ -82,17 +83,17 @@
 				</div>
 			
 				<div class="item">
-					<img src="images/piata.jpg" alt="panorama">
+					<img src="images/bv.jpg" alt="panorama">
 					<div class="carousel-caption">
-						<h3> City Council's House </h3>
-						<p> The city former city council house.</p>
+						<h3> The Black Church and Tampa Mountain </h3>
+						<p> The city's main landmarks.</p>
 					</div>
 				</div>
 			
 				<div class="item">
 					<img src="images/piata-sfatului1.jpg" alt="">
 					<div class="carousel-caption">
-						<h3>  Piata Sfatului </h3>
+						<h3>  Piata Sfatului - City Council Square </h3>
 						<p> The Old City Centre.</p>
 					</div>
 				</div>
@@ -175,7 +176,7 @@
 			<p>is the most popular Romanian ski resort and an important tourist centre preferred by many tourists not only from Romania, but also from Italy, France, Germany, Switzerland and other European states. After the 2010s modernization, the ski area has expanded from 50 hectares to 80 hectares and the slopes length was increased from 13.8 km to 23.9 km. most slopes now have snow cannons installed.</p>
 		</div>
 
-		<div class="col-sm-4 col-md-4" id="">
+		<div class="col-sm-4 col-md-4">
 			<img class="img-circle" src="images/night.jpg">	
 			<p>Tâmpa</p>
 			<p>A small mountain in the middle of the city (900m above sea level), a sightseeing spot near the old city center.</p>
@@ -219,7 +220,7 @@
 					<img src="images/concert3.jpg"  alt="">
 					<p><strong>Voltaj</strong></p>
 					<p>Sat. 5 March 2016</p>
-					<button class="btn">Buy Tickets</button>
+					<button class="btn"><a href="http://www.ticketmaster.ie/">Buy Tickets</a></button>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -227,7 +228,7 @@
 					<img src="images/concert3.jpg"  alt="">	
 					<p><strong>Suie Paparude</strong></p>
 					<p>Sat. 19 March 2016</p>
-					<button class="btn">Buy Tickets</button>
+					<button class="btn"><a href="http://www.ticketmaster.ie/">Buy Tickets</a></button>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -235,7 +236,7 @@
 					<img src="images/concert3.jpg"  alt="">	
 					<p><strong> Parazitii </strong></p>
 					<p>Sat. 27 March 2016</p>
-					<button class="btn">Buy Tickets</button>
+					<button class="btn"><a href="http://www.ticketmaster.ie/">Buy Tickets</a></button>
 				</div>
 			</div>
 	</div>
@@ -282,7 +283,7 @@
 				<div class="checkbox">
 					<label><input type="checkbox">Subscribe to our Newsletter? Please tick the box.</label>
 				</div><br>
-				<button type="submit" class="btn col-xs-offset-6">Submit</button>
+				<button type="submit" class="btn col-xs-offset-6" id="btns">Submit</button>
 			</div>
 		</div>
 
