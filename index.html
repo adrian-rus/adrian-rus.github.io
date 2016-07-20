@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
 	<title>Brasov - Romania - The Heart Of Transylvania</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--loading css styling-->
-	<link rel="stylesheet" type="text/css" href='bootstrap/css/bootstrap.min.css'>
+<!--loading css styling and fonts-->
+	<link rel="stylesheet" type="text/css" href='static/bootstrap/css/bootstrap.min.css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 <!--loading jQuery, Bootstrap and main.js-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src='bootstrap/js/bootstrap.min.js'></script>
-	<script src="scripts/main.js"></script>
-	<script src="scripts/app.js"></script>
+	<script src='static/bootstrap/js/bootstrap.min.js'></script>
+	<script src="static/js/main.js"></script>
+	<script src="static/js/app.js"></script>
 
 	
 </head>
 
-<body id="myPage" data-spy="scroll" data-targets=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" data-targets=".nav" data-offset="50">
 	
 	<!--Responsive navigation bar-->
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="nav navbar-inverse navbar-fixed-top text-uppercase">
 	<div class="nav navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsingList">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="#home">Brasov</a>
+		<a class="navbar-brand" href="#carousel">Brașov</a>
 	</div>
 	<div class="collapse navbar-collapse" id="myCollapsingList">
 		<ul class="nav navbar-nav navbar-right">
 			<li >
-				<a href="#home">Home</a>
+				<a href="#carousel">Home</a>
 			</li>
 			<li>
 				<a href="#history">History</a>
@@ -52,10 +54,10 @@
 				<a href="#contact">Contact</a>
 			</li>
 			<li id="search-bar" class="hidden">
-			     	<a href=""><input type="text" id="search" placeholder="Look it up!"></a>
+                <a href=""><input type="text" id="search" placeholder="Look it up!"></a>
 			</li>
-			<li id="search-btn">
-				<a href=""><span class="glyphicon glyphicon-search" id="search-btn"></span></a>
+			<li>
+				<a href=""><i class="fa fa-search" id="search-btn"></i></a>
 			</li>
 			</ul>
 	</div>
@@ -64,243 +66,342 @@
 
 <!--Home page carousel-->
 
-<div id="home">
+<section id="carousel">
 	<div id="1carousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
+        <ol class="carousel-indicators">
 			<li data-target="#1carousel" data-slide-to="0" class="active"></li>
 			<li data-target="#1carousel" data-slide-to="1"></li>
 			<li data-target="#1carousel" data-slide-to="2"></li>
-			</ol> 
+		</ol>
 		
-			<div class="carousel-inner" role="listbox">
+		<div class="carousel-inner" role="listbox">
 			
-				<div class="item active">
-					<img src="images/Brasov-Panorama-1.jpg" alt="Brasov Panorama">
-					<div class="carousel-caption">
-						<h3> Brasov </h3>
-						<p> Council's Square - main meeting point in the old City Centre.</p>
-					</div>
-				</div>
-			
-				<div class="item">
-					<img src="images/bv.jpg" alt="panorama">
-					<div class="carousel-caption">
-						<h3> The Black Church and Tampa Mountain </h3>
-						<p> The city's main landmarks.</p>
-					</div>
-				</div>
-			
-				<div class="item">
-					<img src="images/piata-sfatului1.jpg" alt="">
-					<div class="carousel-caption">
-						<h3>  Piata Sfatului - City Council Square </h3>
-						<p> The Old City Centre.</p>
-					</div>
+			<div class="item active">
+				<img src="images/Brasov-Panorama-1.jpg" alt="Brasov Panorama">
+				<div class="carousel-caption">
+					<h3> Brașov </h3>
+					<p> Council's Square - Main meeting point in the Old City Centre.</p>
 				</div>
 			</div>
+			
+			<div class="item">
+				<img src="images/bv.jpg" alt="panorama">
+				<div class="carousel-caption">
+					<h3> The Black Church and Tâmpa Mountain </h3>
+					<p> The city's main landmarks.</p>
+				</div>
+			</div>
+			
+            <div class="item">
+				<img src="images/piata-sfatului1.jpg" alt="">
+				<div class="carousel-caption">
+					<h3>  Piaţa Sfatului - Council's Square </h3>
+					<p> The Old City Centre.</p>
+					</div>
+				</div>
+        </div>
 		
-		<a class="left carousel-control" href="#1carousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
+        <a class="left carousel-control" href="#1carousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
 		</a>
 		
 		<a class="right carousel-control" href="#1carousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
 		</a>
-		
-		</div>
+
+	</div>
+
 	
-</div>
+</section>
 
 <!--History of the city-->
 
-<section id="history" class="container-fluid text-center">
-	<div class="row">
-		<h3>City's history</h3>
-		<br>
-		<div class="col-xs-12 col-md-6 text-justify">
-			<p>The oldest traces of human activity and settlements in Brașov date back to the Neolithic age (about 9500 BCE). Archaeologists working from the last half of the 19th century discovered continuous traces of human settlements in areas situated in Brașov: Valea Cetăţii, Pietrele lui Solomon, Șprenghi, Tâmpa, Dealul Melcilor, and Noua.</p>
-			<br>
-			<p>In 1211, by order of King Andrew II of Hungary, the Teutonic Knights fortified the Burzenland to defend the border of the Kingdom of Hungary. On the site of the village of Brașov, the Teutonic Knights built Kronstadt – the city of the crown.[8] Although the crusaders were evicted by 1225, the colonists they brought in remained, along with local population, as did three distinct settlements they founded on the site of Brașov:
-		<ul>
-			<li><p>Corona, around the Black Church (Biserica Neagră);</p></li>
-			<li><p>Martinsberg, west of Cetățuia Hill;</p></li>
-			<li><p>Bartholomä, on the eastern side of Sprenghi Hill.</p></li>
-		</ul>
-			</p>
-		</div>
-		<div class="col-xs-12 col-md-6 text-justify">
-			<p>Germans living in Brașov were mainly involved in trade and crafts. The location of the city at the intersection of trade routes linking the Ottoman Empire and Western Europe, together with certain tax exemptions, allowed Saxon merchants to obtain considerable wealth and exert a strong political influence. They contributed a great deal to the architectural flavor of the city. Fortifications around the city were erected and continually expanded, with several towers maintained by different craftsmen's guilds, according to medieval custom. </p>
-			<br> 
-			<p>Part of the fortification ensemble was recently restored using UNESCO funds, and other projects are ongoing. At least two entrances to the city, Poarta Ecaterinei (or Katharinentor) and Poarta Șchei (or Waisenhausgässertor), are still in existence. The city center is marked by the mayor's former office building (Casa Sfatului) and the surrounding square (piaţa), which includes one of the oldest buildings in Brașov, the Hirscher Haus. Nearby is the "Black Church" (Biserica Neagră), which some claim to be the largest Gothic style church in Southeastern Europe.</p>
-		</div>
-	</div>
-	</div>
-	<div class="row text-center">
-		    <div class="col-sm-12 col-md-3">
-		        <h3>Catherine's Gate - Poarta Ecaterinei</h3>
-		        
-		        <img class="thumbnail" src="images/poarta-ecaterina.jpg" alt="Random image"></img>
+    <section id="history">
+        <div class="container">
+        <h3><strong>City's short history</strong></h3>
+        <p> Brasov is a city that combines the old and the new making it unique and beautiful.</p>
+        <p> It is one of the most visited cities in the country. </p>
+    </div>
+    </section>
+
+<section class="history">
+
+    <div class="container">
+	    <div class="row">
+		    <div class="col-md-6">
+			    <p>The oldest traces of human activity and settlements in Brașov date back to the Neolithic age (about 9500 BCE). Archaeologists working from the last half of the 19th century discovered continuous traces of human settlements in areas situated in Brașov: Valea Cetăţii, Pietrele lui Solomon, Șprenghi, Tâmpa, Dealul Melcilor, and Noua.</p>
+			    <p>In 1211, by order of King Andrew II of Hungary, the Teutonic Knights fortified the Burzenland to defend the border of the Kingdom of Hungary. On the site of the village of Brașov, the Teutonic Knights built Kronstadt – the city of the crown.[8] Although the crusaders were evicted by 1225, the colonists they brought in remained, along with local population, as did three distinct settlements they founded on the site of Brașov:
+		        <ul>
+			        <li><p>Corona, around the Black Church (Biserica Neagră);</p></li>
+			        <li><p>Martinsberg, west of Cetățuia Hill;</p></li>
+			        <li><p>Bartholomä, on the eastern side of Sprenghi Hill.</p></li>
+		        </ul>
 		    </div>
-		    <div class="col-sm-12 col-md-3">
-		        <h3>Schei Gate - Poarta Șchei</h3>
-		       <br>
-		        <img class="thumbnail" src="images/schei.jpg" alt="Random image"></img>
+		    <div class="col-md-6">
+			    <p>Germans living in Brașov were mainly involved in trade and crafts. The location of the city at the intersection of trade routes linking the Ottoman Empire and Western Europe, together with certain tax exemptions, allowed Saxon merchants to obtain considerable wealth and exert a strong political influence. They contributed a great deal to the architectural flavor of the city. Fortifications around the city were erected and continually expanded, with several towers maintained by different craftsmen's guilds, according to medieval custom. </p>
+				<p>Part of the fortification ensemble was recently restored using UNESCO funds, and other projects are ongoing. At least two entrances to the city, Poarta Ecaterinei (or Katharinentor) and Poarta Șchei (or Waisenhausgässertor), are still in existence. The city center is marked by the mayor's former office building (Casa Sfatului) and the surrounding square (piaţa), which includes one of the oldest buildings in Brașov, the Hirscher Haus. Nearby is the "Black Church" (Biserica Neagră), which some claim to be the largest Gothic style church in Southeastern Europe.</p>
 		    </div>
-		    <div class="col-sm-12 col-md-3">
-		        <h3>Tailor's Tower - Bastionul Tesãtorilor</h3>
-		        
-		        <img class="thumbnail" src="images/tesatori.jpg" alt="Random image" ></img>
+        </div>
+        <hr>
+	    <div class="row">
+		    <div class="col-md-4">
+                <div class="panel text-center">
+		            <div class="panel-heading"><h3>Catherine's Gate</h3></div>
+                    <div class="panel-body">
+		                <img class="img-thumbnail" src="images/poarta-ecaterina.jpg" alt="Catherine's Gate" id="pic1"></img>
+                    </div>
+                    <div id="description1" class="panel-footer">
+                        <p> The gate  was build in the XV century.</p>
+                        <p> It was part of the city's fortification and was used as a pedestrian entrance in the citadel.</p>
+                        <p> Recently it has been restored using UNESCO funds.</p>
+                    </div>
+                </div>
 		    </div>
-		    <div class="col-sm-12 col-md-3">
-				<h3>City's Citadel - Cetatea Brasov</h3>	
-				<br>
-		        <img class="thumbnail" src="images/cetate1.jpg" alt="Random image" ></img>
+
+		    <div class="col-md-4">
+                <div class="panel text-center">
+		            <div class="panel-heading"><h3>Șchei Gate</h3></div>
+                    <div class="panel-body">
+                        <img class="img-thumbnail" src="images/schei.jpg" alt="Schei Gate" id="pic2"></img>
+                    </div>
+                    <div id="description2" class="panel-footer">
+                        <p> This gate  was build in the XIX century.</p>
+                        <p> It was built as an extra entrance in the citadel used by the people of Schei.</p>
+                        <p> It has been recently restored.</p>
+                    </div>
+
+                </div>
+
+		    </div>
+
+		    <div class="col-md-4" >
+                <div class="panel text-center">
+		        <div class="panel-heading"> <h3>Tailor's Tower</h3></div>
+		        <div class="panel-body">
+                    <img class="img-thumbnail" src="images/tesatori.jpg" alt="Tailor's Tower" id="pic3" ></img>
+                </div>
+                    <div id="description3" class="panel-footer">
+                        <p> This tower was built as a defense tower in the XV century.</p>
+                        <p> It is build on 4 levels and the walls are 4m thick at the base and 1m thick on the 4th level.</p>
+                        <p> Today it's a museum - The Regional Museum of Fortifactions.</p>
+                    </div>
+                </div>
+
 		    </div>
 		    
 		</div>
 	</div>
+    </div>
 </section>
 
-<section id="tourism" class="container-fluid text-center">
-	<h3>Visit Brasov today!<br> There is so much more to discover!</h3>
-	<p>With its central location, Brașov is a suitable location from which to explore Romania, and the distances to several tourist destinations (including the Black Sea resorts, the monasteries in northern Moldavia, and the wooden churches of Maramureș) are similar. It is also the largest city in a mountain resorts area. The old city is very well preserved and is best seen by taking the cable-car to the top of Tâmpa Mountain.</p>
+    <section class="buffer" id="tourism">
+         <div class="container">
+	        <h3><strong>Visit Brașov today!</strong></h3>
+             <h3> There is so much more to discover!</h3>
 
+	        <p>With its central location, Brașov is a suitable location from which to explore Romania.</p>
+            <p>The distances to several tourist destinations (including the Black Sea resorts,
+                the monasteries in northern Moldova, and the wooden churches of Maramureș) are similar.</p>
+            <p>It is also the largest city in a mountain resorts area. The old city is very well preserved
+            and is best seen by taking the cable-car to the top of Tâmpa Mountain.</p>
+        </div>
+    </section>
+
+<section class="tourism">
+    <div class="container">
 	<div class="row">
-	<h3>Sights</h3>
-		<div class="col-sm-4 col-md-4">
-			<img class="img-circle" src="images/poiana.jpg">
-			<p>Poiana Brasov</p>
+		<div class="col-md-4 panel-info">
+			<img class="img-circle panel-heading" src="images/poiana.jpg">
+			<h4>Poiana Brasov</h4>
 			<p>A ski resort but also a sightseeing spot.</p>
-			<p>is the most popular Romanian ski resort and an important tourist centre preferred by many tourists not only from Romania, but also from Italy, France, Germany, Switzerland and other European states. After the 2010s modernization, the ski area has expanded from 50 hectares to 80 hectares and the slopes length was increased from 13.8 km to 23.9 km. most slopes now have snow cannons installed.</p>
+			<p>It is the most popular Romanian ski resort and an important tourist centre preferred by many tourists
+                not only from Romania, but also from Italy, France, Germany, Switzerland and other European states.
+                </p>
+            <p>After the 2010s modernization, the ski area has expanded from 50 hectares to 80 hectares and the slopes
+                length was increased from 13.8 km to 23.9 km. Most slopes now have snow cannons installed.</p>
 		</div>
 
-		<div class="col-sm-4 col-md-4">
-			<img class="img-circle" src="images/night.jpg">	
-			<p>Tâmpa</p>
+		<div class="col-md-4 panel-info">
+			<img class="img-circle panel-heading" src="images/night.jpg">
+			<h4>Tâmpa</h4>
 			<p>A small mountain in the middle of the city (900m above sea level), a sightseeing spot near the old city center.</p>
 			<p>Tâmpa is a mountain, part of the Postăvarul Massif, located in the southern part of the Eastern Carpathians (alternatively categorized as in the Curvature Carpathians) and almost entirely surrounded by the city of Braşov. Its elevation is 960 m (995 m according to some sources), almost 400 m above the city.</p>
 		</div>
 
-		<div class="col-sm-4 col-md-4">
-			<img src="images/Bran.jpg" class="img-circle">
-			<p>Bran Castle - Dracula's Castle</p>
-			<p>Bran Castle (Romanian: Castelul Bran; German: Törzburg; Hungarian: Törcsvár), situated near Bran and in the immediate vicinity of Braşov, is a national monument and landmark in Romania. The fortress is situated on the border between Transylvania and Wallachia, on DN73. Commonly known as "Dracula's Castle" (although it is one among several locations linked to the Dracula legend, including Poenari Castle and Hunyad Castle), it is the home of the titular character in Bram Stoker's Dracula.</p>
+		<div class="col-md-4 panel-info" >
+			<img src="images/Bran.jpg" class="img-circle panel-heading">
+			<h4>Bran Castle - Dracula's Castle</h4>
+			<p>Bran Castle (Romanian: Castelul Bran; German: Törzburg; Hungarian: Törcsvár) is situated near Bran
+                and in the immediate vicinity of Braşov, is a national monument and landmark in Romania.</p>
+            <p>The fortress is situated on the border between Transylvania and Wallachia, on DN73. Commonly known as
+                "Dracula's Castle" (although it is one among several locations linked to the Dracula legend,
+                including Poenari Castle and Hunyad Castle), it is the home of the titular character in Bram Stoker's Dracula.</p>
 		</div>
 
 	</div>
-	
-	<div class="row text-center">
-		<div class="col-sm-4 col-md-4"></div>
-
-		<div class="col-sm-4 col-md-4">
-			<iframe width="480" height="260" src="https://www.youtube.com/embed/xwNtlYX_iYM" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="col-sm-4 col-md-4"></div>
-
-	</div>
-	<div class="row">
-		<h3>And there is so much more to discover. </h3>
-		<h3>Contact us today to learn more.</h3>
-		</div>
-	</div>
-
-		
 </section>
 
+    <section id="video">
+        <div class="video-wrapper">
+		    <iframe src="https://www.youtube.com/embed/xwNtlYX_iYM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+	</section>
+    </div>
 
-<section id="events" class="container-fluid text-center">
-	<div class="">
-		<h3>Event Dates</h3>
-		<p>These are the days when there is a gig in the city.<br>Remember to book your tickets!</p>
-		<ul class="list-group">
-			<li class="list-group-item" >January: <span class="label label-danger">SOLD OUT!</span></li>
-			<li class="list-group-item">February: <span class="label label-danger">SOLD OUT!</span></li>
-			<li class="list-group-item" >March <span class="badge"> 3 </span> Gigs coming up:</li>
+    <section class="buffer" id="events">
+        <div class="container">
+            <h3><strong>Event Dates</strong></h3>
+		<p>Check below the upcoming events! </p>
+            <p>These are the days when there is a gig in the city.</p>
+            <p>Remember to book your tickets!</p>
+        </div>
+
+    </section>
+
+<section class="events">
+	<div class="container">
+        <div class="row">
+			<ul class="list-group">
+			<li class="list-group-item" >July: <span class="label label-danger pull-right">SOLD OUT!</span></li>
+			<li class="list-group-item">August: <span class="label label-danger pull-right">SOLD OUT!</span></li>
+			<li class="list-group-item" >September <span class="btn btn-sm label label-info pull-right"> 3 </span> gigs coming up:</li>
 		</ul>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="thumbnail">
+            </div>
+
+		<div class="row text-center">
+				<div class="thumbnail col-md-4">
+					<img src="images/concert2.jpg"  alt="">
+					<h4><strong>Voltaj</strong></h4>
+					<p>Sat. 3 September 2016</p>
+					<a href="http://www.ticketmaster.ie/" class="btn btn-default btn-lg" role="button">Buy Tickets</a></button>
+				</div>
+
+				<div class="thumbnail col-md-4">
+					<img src="images/concert1.jpg"  alt="">
+					<h4><strong>Suie Paparude</strong></h4>
+					<p>Sat. 10 September 2016</p>
+					<a href="http://www.ticketmaster.ie/" class="btn btn-lg btn-default" role="button">Buy Tickets</a>
+				</div>
+
+			    <div class="thumbnail col-md-4">
 					<img src="images/concert3.jpg"  alt="">
-					<p><strong>Voltaj</strong></p>
-					<p>Sat. 5 March 2016</p>
-					<button class="btn"><a href="http://www.ticketmaster.ie/">Buy Tickets</a></button>
+					<h4><strong> Parazitii </strong></h4>
+					<p>Sat. 17 September 2016</p>
+					<a href="http://www.ticketmaster.ie/" class="btn btn-lg btn-default" role="button">Buy Tickets</a>
 				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="thumbnail">
-					<img src="images/concert3.jpg"  alt="">	
-					<p><strong>Suie Paparude</strong></p>
-					<p>Sat. 19 March 2016</p>
-					<button class="btn"><a href="http://www.ticketmaster.ie/">Buy Tickets</a></button>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="thumbnail">
-					<img src="images/concert3.jpg"  alt="">	
-					<p><strong> Parazitii </strong></p>
-					<p>Sat. 27 March 2016</p>
-					<button class="btn"><a href="http://www.ticketmaster.ie/">Buy Tickets</a></button>
-				</div>
-			</div>
-	</div>
-	<div class="row">
-		<h3>would you like to see any other bands come to our city? </h3>
-		<h3>Contact us below and let us organise it.</h3>
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4"></div>
-	</div>
+
+	    </div>
+	    <div class="container">
+		<h3><strong>Would you like to see any other bands have gigs to our city? </strong></h3>
+		<p>Contact us below and let us organise it.</p>
+	    </div>
+        </div>
 </section>
 
 
-<section id="contact" class="container-fluid text-center">
-	<h3>Want to get in touch? </h3>
-	<h3>Please fill in the form below.</h4>
-	<form role="form" class="form-horizontal text-center">
-		<div class="form-group">
-			<label class="control-label col-xs-2" for="name">Your Name:</label>
-			<div class="col-xs-8">
-				<input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-2" for="email">Your Email:</label>
-			<div class="col-xs-8">
-				<input type="text" class="form-control" id="email" placeholder="Your Email Address" required>
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-2" for="phone">Your Phone Number:</label>
-			<div class="col-xs-8">
-				<input type="number" class="form-control" id="phone" placeholder="Your Phone Number">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="control-label col-xs-2" for="comments">Comments:</label>
-			<div class="col-xs-8">
-				<textarea class="form-control" id="comments" placeholder="Please write your comments here!" rows="5"></textarea>
-			</div>
-		</div>
-		<div class="form-group">
-			<div class="col-xs-offset-2 col-md-offset-2">
-				<div class="checkbox">
-					<label><input type="checkbox">Subscribe to our Newsletter? Please tick the box.</label>
-				</div><br>
-				<button type="submit" class="btn col-xs-offset-6" id="btns">Submit</button>
-			</div>
-		</div>
-
-		
-	</form> 
-
-
+    <section id="contact">
+        <div class="container">
+            <h3><strong> Want to get in touch? </strong></h3>
+            <p> Please fill in the form below.</p>
+        </div>
+    </section>
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+	            <form role="form" class="form-horizontal text-center">
+		            <div class="form-group">
+			            <label class="control-label col-md-2" for="name">Your Name:</label>
+			            <div class="col-md-8">
+				            <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+			            </div>
+		            </div>
+		            <div class="form-group">
+			            <label class="control-label col-md-2" for="email">Your Email:</label>
+			            <div class="col-md-8">
+				            <input type="text" class="form-control" id="email" placeholder="Your Email Address" required>
+			            </div>
+		            </div>
+		            <div class="form-group">
+                        <label class="control-label col-md-2" for="phone">Your Phone Number:</label>
+                        <div class="col-md-8">
+				            <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+			            </div>
+		            </div>
+		            <div class="form-group">
+			            <label class="control-label col-md-2" for="comments">Comments:</label>
+			            <div class="col-md-8">
+				            <textarea class="form-control" id="comments" placeholder="Please write your comments here!" rows="5"></textarea>
+			            </div>
+		            </div>
+		            <div class="form-group">
+			            <div class="col-md-offset-2">
+				            <div class="checkbox">
+					            <label><input type="checkbox">Subscribe to our Newsletter? Please tick the box.</label>
+				            </div><br>
+				            <button type="submit" class="btn col-md-offset-6 btn-lg btn-default" id="btns"><i class="fa fa-paper-plane"></i></button>
+			            </div>
+		            </div>
+	            </form>
+            </div>
+            <div class="col-md-6">
+                <div class="panel-info">
+                    <div class="panel-title">
+                        <h3><strong> Address: </strong> </h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>33 Some Ave.</p>
+                        <p>Brasov, Romania</p>
+                        <p><i class="fa fa-phone"></i> +40 268 555 555 </p>
+                        <p><i class="fa fa-mobile-phone"></i> +40 742 123 456 </p>
+                        <p><i class="fa fa-envelope-o"></i> <a href="mailto:brasov-events@mail.com"> brasov-events@mail.com</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="googleMap" class="col-sm-4"></section>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
+    <section class="container-fluid">
+        <div class="row">
+            <div id="googleMap"></div>
+        </div>
+    </section>
+
+
+<footer>
+
+    <nav class="nav navbar-default navbar-inverse">
+        <ul class="nav navbar-nav">
+        <li><a href="http://www.facebook.com" class="btn btn-lg btn-dark"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+
+	    <li><a href="http://www.twitter.com" class="btn btn-lg btn-dark"><i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
+
+        <li><a href="http://www.youtube.com" class="btn btn-lg btn-dark"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+	    <a class="pull-right" href="#myPage" data-toggle="tooltip" title="BACK TO TOP" id="top">
+            <i class="fa fa-chevron-up btn-lg"></i>
+  	    </a>
+    </nav>
+    <br><br>
+    <div class="container-fluid">
+	    <p class="text-muted">Copyright <i class="fa fa-copyright"></i> 2016 | Wesbite created by Adrian Rus</p>
+	    <p class="text-muted">Contact me on:
+            <a href="mailto:adrian.rus@live.com" class="btn btn-success btn-lg"><i class="fa fa-envelope"></i></a>
+            <a href="https://ie.linkedin.com/in/adrianrus73" class="btn btn-info btn-lg"><i class="fa fa-linkedin"></i> </a>
+            <a href="https://github.com/adrian-rus" class="btn btn-default btn-lg"><i class="fa fa-github"></i> </a>
+        </p>
+    </div>
+</footer>
+
+
+<!--loading application JavaScripts-->
+   <script src='static/js/main.js'></script>
+               <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <script>
 var myCenter = new google.maps.LatLng(45.642076, 25.588994);
 
 function initialize() {
@@ -315,39 +416,13 @@ draggable:false,
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
 var marker = new google.maps.Marker({
-position:myCenter,
+position:myCenter
 });
 
  marker.setMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-</script>	
-
-<footer class="text-right container-fluid footer">
-<nav>
-	<ul class="nav navbar-nav">
-			<li>
-				<a href="http://www.facebook.com" class="home"><img src="images/facebooksite.png" alt="facebook"></a>
-			</li>
-			<li>
-				<a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter"></a>
-			</li>
-			<li>
-				<a href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube"></a>
-			</li>
-	</ul>
-</nav>
-	<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="BACK TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  	</a><br><br>
-	<p>Copyright &copy; 2016 | Wesbite created by Adrian Rus</p>
-	<p>Contact me on: <a href="mailto:adrian.rus@live.com">adrian.rus@live.com</a></p>
-</footer>
-
-
-<!--loading application JavaScripts-->
-   <script src='scripts/main.js'></script>
-   
+</script>
 </body>
 </html>
