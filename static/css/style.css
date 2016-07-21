@@ -25,6 +25,11 @@ body{
     padding:50px 0;
 }
 
+.carousel-caption{
+    text-shadow: 2px 2px #000000;
+    font-weight: bolder;
+}
+
 footer nav a{
     text-decoration: none;
 }
