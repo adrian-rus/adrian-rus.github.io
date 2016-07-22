@@ -1,3 +1,9 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
 	font-family: "Lato","Open Sans", Arial, sans-serif;
     color: #000;
@@ -5,7 +11,7 @@ body{
 
 .nav {
     padding: 0;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 18px;
     font-weight: bold;
     opacity: 0.9;
